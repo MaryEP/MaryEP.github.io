@@ -1,2 +1,2 @@
-# marypringle.github.io
+# maryep.github.io
 Mary's portfolio website
