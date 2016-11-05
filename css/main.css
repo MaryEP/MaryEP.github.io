@@ -31,7 +31,7 @@ h2 {
 /* personal statement */
 h3.statement {
   font-family: 'Proza Libre', sans-serif;
-	font-size: 20px;
+	font-size: 25px;
   color: #000080; /*navy*/
   padding-top: 100px;
 	padding-right: 25px;
@@ -39,12 +39,13 @@ h3.statement {
 
 h3.statement {
 	font-size: 20px;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s;
+	
+    /*-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    /*transition: width 2s;*/
 }
-h3.statement:hover {
+/*h3.statement:hover {
     font-size: 30px;
-}
+}*/
 
 h4 {
   font-family: 'Proza Libre', sans-serif;
@@ -205,14 +206,37 @@ tbody, th,tr,td {
 		color: white;
 }
 
-@keyframes .frame2 {
+/* project picture frames */
+@keyframes .frame1, .frame2, .frame3, .frame4, .frame5, .frame6 {
  
   transition-property: opacity;
   transition-duration: .5s;
 }
-.frame2:hover {
-  opacity: 0.8; /* .1 blends almost entirely to background */
+.frame1:hover {
+	background-color: orange;
+  opacity: 0.6; /* .1 blends almost entirely to background */
   }
+.frame2:hover {
+	background-color: orange;
+  opacity: 0.6; 
+  }
+.frame3:hover {
+	background-color: orange;
+  opacity: 0.6; 
+  }
+.frame4:hover {
+	background-color: orange;
+  opacity: 0.6; 
+  }
+.frame5:hover {
+	background-color: orange;
+  opacity: 0.6; 
+  }
+.frame6:hover {
+	background-color: orange;
+  opacity: 0.6; 
+  }
+
 
 .code-link {
 	background-color: #4CAF50; /* Green */
@@ -230,6 +254,15 @@ p.contact {
 .avatar {
 	width: 100%;
 }
+
+@keyframes .avatar {
+  transition-property: opacity;
+  transition-duration: .5s;
+}
+.avatar:hover {
+	
+  opacity: 0.6; 
+  }
 
 footer {
 	height: 50px;
