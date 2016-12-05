@@ -23,35 +23,34 @@ h1 {
 }
 
 h2 {
-  font-family: 'Proza Libre', sans-serif;
+  font-family: 'Slackey', cursive;
 	font-size: 40px;
   color: #000080; /*navy*/
 }
 
 /* personal statement */
-h3.statement {
+h3 {
   font-family: 'Proza Libre', sans-serif;
 	font-size: 25px;
   color: #000080; /*navy*/
   padding-top: 100px;
 	padding-right: 25px;
 }
-
-h3.statement {
-	font-size: 20px;
 	
     /*-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     /*transition: width 2s;*/
-}
-/*h3.statement:hover {
-    font-size: 30px;
-}*/
 
 h4 {
   font-family: 'Proza Libre', sans-serif;
 	font-size: 18px;
-  color: navy;
-  
+  color: #000080;
+}
+
+h5 {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 18px;
+  color: #000080;
+	text-decoration: underline;
 }
 
 ul {
@@ -165,7 +164,7 @@ img.bottle {
     transition: width 2s;
 }
 img.bottle:hover {
-    width: 60px;
+    width: 80px;
 }
 
 
@@ -177,34 +176,23 @@ img.bottle:hover {
 	text-align: center;
 }
 
-.table {
-	width:50%;
-	color: #000080; /*navy*/
-	margin-left: 50px;
-	text-align: left;
-	border-top: 0px;
-	border-bottom: 0px;
-	border-color: none;
+
+@-webkit-keyframes traffic {
+	0% {
+		-webkit-transform:rotate(4deg);
+	}
+	50% {
+		-webkit-transform:rotate(-4deg);
+		}
+	100% {
+		-webkit-transform:rotate(4deg);
+	}
 }
 
-	.skills:hover {
-    background-color: #FF7F50;/*coral*/
-		font-size: 16px;
-		color: white;
+.traffic:hover {
+	-webkit-animation: traffic 0.5s infinite;
 }
 
-tbody, th,tr,td {
-	border-top: 0px;
-	border-bottom: 0px;
-	border-color: none;
-	line-height: 2.3;
-}
-
-.table:hover {
-    background-color: #FF7F50;/*coral*/
-		font-size: 16px;
-		color: white;
-}
 
 /* project picture frames */
 @keyframes .frame1, .frame2, .frame3, .frame4, .frame5, .frame6 {
@@ -244,7 +232,8 @@ tbody, th,tr,td {
 	font-size: 14px;
 	width: 100px;
 	margin-top: 10px;
-	margin-left: 50px;
+	margin-left: auto; /*50px*/
+	margin-right: auto;
 } 
 
 p.contact {
